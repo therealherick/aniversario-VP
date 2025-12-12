@@ -127,33 +127,6 @@ export default function Home() {
         </div>
       </header>
 
-      {/* Event Info Section */}
-      <section className="py-20 bg-card border-t border-b border-border">
-        <div className="container">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="text-center">
-              <div className="text-5xl mb-4">📅</div>
-              <h3 className="text-2xl font-bold text-accent mb-2">DATA</h3>
-              <p className="text-lg text-foreground">03 DE OUTUBRO DE 2025</p>
-            </div>
-            <div className="text-center">
-              <div className="text-5xl mb-4">⏰</div>
-              <h3 className="text-2xl font-bold text-accent mb-2">HORÁRIO</h3>
-              <p className="text-lg text-foreground">19:00 - MADRUGADA ADENTRO</p>
-            </div>
-            <div className="text-center">
-              <div className="text-5xl mb-4">📍</div>
-              <h3 className="text-2xl font-bold text-accent mb-2">LOCAL</h3>
-              <p className="text-lg text-foreground">MOTOCLUBE SÃO GONÇALO</p>
-              <p className="text-sm text-muted-foreground mt-2">
-                R. Profa. Maria Joaquina, 3592<br />
-                Boa Vista, São Gonçalo - RJ
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Countdown Section */}
       <section className="py-20 bg-background">
         <div className="container">
@@ -179,6 +152,33 @@ export default function Home() {
                 </div>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Event Info Section */}
+      <section className="py-20 bg-card border-t border-b border-border">
+        <div className="container">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="text-center">
+              <div className="text-5xl mb-4">📅</div>
+              <h3 className="text-2xl font-bold text-accent mb-2">DATA</h3>
+              <p className="text-lg text-foreground">10 DE MARÇO DE 2026</p>
+            </div>
+            <div className="text-center">
+              <div className="text-5xl mb-4">⏰</div>
+              <h3 className="text-2xl font-bold text-accent mb-2">HORÁRIO</h3>
+              <p className="text-lg text-foreground">19:00 - MADRUGADA ADENTRO</p>
+            </div>
+            <div className="text-center">
+              <div className="text-5xl mb-4">📍</div>
+              <h3 className="text-2xl font-bold text-accent mb-2">LOCAL</h3>
+              <p className="text-lg text-foreground">MOTOCLUBE SÃO GONÇALO</p>
+              <p className="text-sm text-muted-foreground mt-2">
+                R. Profa. Maria Joaquina, 3592<br />
+                Boa Vista, São Gonçalo - RJ
+              </p>
+            </div>
           </div>
         </div>
       </section>
