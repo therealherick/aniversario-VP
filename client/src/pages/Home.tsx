@@ -75,6 +75,36 @@ export default function Home() {
       {/* Audio Element */}
       <audio ref={audioRef} src="/simple_man.mpeg" loop />
 
+      {/* Sticky Countdown Bar */}
+      <div className="sticky top-0 z-50 bg-card border-b border-border py-3 shadow-lg">
+        <div className="container">
+          <div className="flex items-center justify-between">
+            <div className="text-sm md:text-base font-bold text-accent">⏳ FALTAM:</div>
+            <div className="flex gap-2 md:gap-4">
+              <div className="text-center">
+                <div className="text-lg md:text-xl font-bold text-accent">{countdown.dias}</div>
+                <div className="text-xs text-muted-foreground">DIAS</div>
+              </div>
+              <div className="text-accent">•</div>
+              <div className="text-center">
+                <div className="text-lg md:text-xl font-bold text-accent">{countdown.horas}</div>
+                <div className="text-xs text-muted-foreground">HORAS</div>
+              </div>
+              <div className="text-accent">•</div>
+              <div className="text-center">
+                <div className="text-lg md:text-xl font-bold text-accent">{countdown.minutos}</div>
+                <div className="text-xs text-muted-foreground">MIN</div>
+              </div>
+              <div className="text-accent">•</div>
+              <div className="text-center">
+                <div className="text-lg md:text-xl font-bold text-accent">{countdown.segundos}</div>
+                <div className="text-xs text-muted-foreground">SEG</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
       {/* Hero Section */}
       <header className="relative h-screen flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-background z-10" />
@@ -333,7 +363,7 @@ export default function Home() {
       {/* Footer */}
       <footer className="py-12 bg-card border-t border-border text-center">
         <p className="text-muted-foreground mb-2">
-          CARLOS GOMES BIRTHDAY | 03 DE OUTUBRO | MOTOCLUBE SÃO GONÇALO
+          CARLOS GOMES BIRTHDAY | 10 DE MARÇO DE 2026 | MOTOCLUBE SÃO GONÇALO
         </p>
         <p className="text-accent font-bold">
           🏍️ VAI SER LENDÁRIO! 🏍️
